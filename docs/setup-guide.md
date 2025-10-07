@@ -168,6 +168,33 @@ sudo tail -f /greengrass/v2/logs/greengrass.log
 - **証明書管理**: デバイス固有の証明書で認証
 - **ログ管理**: 詳細ログで監査証跡確保
 
+## リソース削除
+
+テスト完了後、作成したすべてのAWSリソースを削除：
+
+```bash
+./scripts/cleanup-greengrass-resources.sh
+```
+
+### 削除されるリソース
+
+- **S3バケット**: `greengrass-setup-*`プレフィックス
+- **IoT Things**: `RaspberryPi-*`、`Greengrass*`
+- **IoT証明書**: Thingにアタッチされたすべての証明書
+- **IoTポリシー**: `Greengrass*`プレフィックス
+- **Thing Groups**: `Greengrass*`プレフィックス
+- **Role Aliases**: `Greengrass*`プレフィックス
+- **Greengrass Core Devices**: すべてのコアデバイス
+- **IAMユーザー**: `greengrass-device-user`
+- **IAMロール**: `GreengrassV2TokenExchangeRole`
+- **IAMポリシー**: `GreengrassDevicePolicy`
+
+### カスタムパラメータ
+
+```bash
+./scripts/cleanup-greengrass-resources.sh [USER_NAME] [POLICY_NAME] [ROLE_NAME] [BUCKET_PREFIX]
+```
+
 ## トラブルシューティング
 
 問題が発生した場合は [troubleshooting.md](troubleshooting.md) を参照してください。

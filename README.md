@@ -49,6 +49,19 @@ Amazon Q Developerを活用してRaspberry Pi上でAWS IoT Greengrassを自動�
 
 詳細な手順は [docs/setup-guide.md](docs/setup-guide.md) を参照してください。
 
+## リソース削除
+
+テスト完了後、作成したAWSリソースをすべて削除：
+
+```bash
+./scripts/cleanup-greengrass-resources.sh
+```
+
+**パラメータ（オプション）:**
+```bash
+./scripts/cleanup-greengrass-resources.sh [USER_NAME] [POLICY_NAME] [ROLE_NAME] [BUCKET_PREFIX]
+```
+
 ## ライセンス
 
 MIT License
