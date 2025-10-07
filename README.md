@@ -40,7 +40,11 @@ Amazon Q Developerを活用してRaspberry Pi上でAWS IoT Greengrassを自動�
    # Access Key ID、Secret Access Key、リージョンを設定
    ```
 
-2. **必要な権限・環境**
+2. **Amazon Q Developer実行環境**
+   - AWS CLIで設定した認証情報と同じ環境でQ Developerを実行する必要があります
+   - Q Developerが適切にAWSリソースにアクセスできることを確認してください
+
+3. **必要な権限・環境**
    - AWS管理者権限
    - Amazon Q Developerアクセス
    - Raspberry Pi OS (2025/10/01 64bit版)
