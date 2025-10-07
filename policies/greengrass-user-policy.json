@@ -1,0 +1,33 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "iot:*"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "greengrass:*"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "iam:GetRole",
+                "iam:CreateRole",
+                "iam:AttachRolePolicy",
+                "iam:PassRole",
+                "iam:GetPolicy",
+                "iam:CreatePolicy",
+                "iam:PutRolePolicy",
+                "iam:GetRolePolicy"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
