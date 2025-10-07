@@ -16,11 +16,13 @@ Amazon Q Developerを活用してRaspberry Pi上でAWS IoT Greengrassを自動�
 ├── docs/                   # ドキュメント
 │   ├── setup-guide.md     # セットアップ手順書
 │   ├── q-developer-workflow.md  # Q Developerワークフロー
-│   └── troubleshooting.md # トラブルシューティング
+│   ├── troubleshooting.md # トラブルシューティング
+│   └── cleanup-guide.md   # リソース削除手順
 ├── scripts/               # セットアップスクリプト
 │   ├── raspberry-pi-setup.sh    # メインセットアップ
 │   ├── create-iam-resources.sh  # IAMリソース作成
-│   └── debug-greengrass.sh      # デバッグ用
+│   ├── debug-greengrass.sh      # デバッグ用
+│   └── cleanup-greengrass-resources.sh  # リソース削除
 ├── policies/              # IAMポリシー定義
 │   ├── greengrass-user-policy.json     # IAMユーザーポリシー
 │   ├── greengrass-service-role.json    # サービスロール信頼ポリシー
