@@ -92,7 +92,7 @@ Amazon Q Developerを活用してRaspberry Pi上でAWS IoT Greengrassを自動�
 
 ## ライセンス
 
-MIT License
+個人開発プロジェクトです。使用・改変は自由ですが、自己責任でお願いします。
 
 ## 貢献
 
