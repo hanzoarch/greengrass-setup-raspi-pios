@@ -2,6 +2,7 @@
 
 # AWS IoT Greengrass Raspberry Pi Setup Script
 # Target OS: Raspberry Pi OS (2025/10/01 64bit版)
+# Tested on: Raspberry Pi 5
 # 
 # NOTE: This script template requires AWS credentials to be embedded
 # Use Amazon Q Developer to create a version with your credentials
@@ -21,6 +22,7 @@ error_exit() {
 
 log "=== AWS IoT Greengrass Setup Started ==="
 log "Target OS: Raspberry Pi OS (2025/10/01 64bit版)"
+log "Tested on: Raspberry Pi 5"
 
 # Step 1: System Update and Package Installation
 log "Step 1: Updating system and installing packages..."

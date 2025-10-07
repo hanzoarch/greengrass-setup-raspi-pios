@@ -5,8 +5,10 @@ Amazon Q Developerを活用してRaspberry Pi上でAWS IoT Greengrassを自動�
 ## 対応環境
 
 - **Raspberry Pi OS**: 2025/10/01リリース 64bit版
-- **Raspberry Pi**: 4B (4GB RAM以上推奨)
+- **Raspberry Pi**: 5 (テスト済み)
 - **AWS IoT Greengrass**: v2 (最新版)
+
+> **注意**: Raspberry Pi 4Bでの動作は未検証です。
 
 ## フォルダ構成
 

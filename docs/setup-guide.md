@@ -6,8 +6,10 @@ Amazon Q Developerを活用してRaspberry Pi OS (2025/10/01 64bit版) 上でAWS
 
 ## 前提条件
 
-- **Raspberry Pi 4B** (4GB RAM以上推奨)
+- **Raspberry Pi 5** (テスト済み)
 - **Raspberry Pi OS** (2025/10/01リリース 64bit版)
+
+> **注意**: 本手順はRaspberry Pi 5でのみテストされています。Raspberry Pi 4Bでの動作は未検証です。
 - **インターネット接続** 必須
 - **Amazon Q Developer** アクセス権限
 - **AWS管理者権限** を持つアカウント
