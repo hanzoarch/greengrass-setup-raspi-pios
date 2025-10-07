@@ -32,17 +32,39 @@ Amazon Q Developerを活用してRaspberry Pi上でAWS IoT Greengrassを自動�
 
 ## クイックスタート
 
-1. **前提条件の確認**
+### 前提条件
+
+1. **AWS CLI設定済み環境**
+   ```bash
+   aws configure
+   # Access Key ID、Secret Access Key、リージョンを設定
+   ```
+
+2. **必要な権限・環境**
    - AWS管理者権限
    - Amazon Q Developerアクセス
    - Raspberry Pi OS (2025/10/01 64bit版)
 
-2. **セットアップ実行**
+### セットアップ手順
+
+1. **IAMリソース作成**
    ```bash
-   curl -s "https://your-bucket.s3.region.amazonaws.com/path/raspberry-pi-setup.sh" | bash
+   ./scripts/create-iam-resources.sh
    ```
 
-3. **動作確認**
+2. **認証情報をスクリプトに設定**
+   ```bash
+   # 出力された認証情報をraspberry-pi-setup.shに設定
+   nano scripts/raspberry-pi-setup.sh
+   ```
+
+3. **Raspberry Piで実行**
+   ```bash
+   # スクリプトを転送して実行
+   ./raspberry-pi-setup.sh
+   ```
+
+4. **動作確認**
    ```bash
    sudo systemctl status greengrass
    ```
